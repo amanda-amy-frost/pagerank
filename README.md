@@ -1,5 +1,6 @@
 # PageRank (2018)
 
+- [Introduction](#introduction)
 - [Disclaimer](#disclaimer)
 - [PageRank Formula](#pagerank-formula)
 - [Usage](#usage)
@@ -7,6 +8,8 @@
 - [Example Output](#example-output)
 - [Sample Gnutella Output (2018)](#sample-gnutella-output-2018)
 - [Sample Gnutella output (2026)](#sample-gnutella-output-2026)
+
+## Introduction
 
 [PageRank](https://en.wikipedia.org/wiki/PageRank) used to form the core of Google's search algorithm, as it allowed webpages to be ranked in order of their relative importance to each other. Due to the self-referential nature of this importance ranking, representing the pages (nodes) as a matrix of directed links (edges) is a particularly useful and efficient way to solve the problem.
 
