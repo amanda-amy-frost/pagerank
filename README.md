@@ -7,7 +7,7 @@
 - [Example Input](#example-input)
 - [Example Output](#example-output)
 - [Sample Gnutella Output (2018)](#sample-gnutella-output-2018)
-- [Sample Gnutella output (2026)](#sample-gnutella-output-2026)
+- [Sample Gnutella Output (2026)](#sample-gnutella-output-2026)
 
 ## Introduction
 
