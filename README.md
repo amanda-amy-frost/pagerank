@@ -193,7 +193,7 @@ Greatest absolute difference: 0.000051
 Sum of differences: 0.000199
 ```
 
-## Sample Gnutella output (2026)
+## Sample Gnutella Output (2026)
 
 ```
 # Using Python 3.10.x
