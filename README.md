@@ -1,13 +1,14 @@
 # PageRank (2018)
 
-- [Introduction](#introduction)
-- [Disclaimer](#disclaimer)
-- [PageRank Formula](#pagerank-formula)
-- [Usage](#usage)
-- [Example Input](#example-input)
-- [Example Output](#example-output)
-- [Sample Gnutella Output (2018)](#sample-gnutella-output-2018)
-- [Sample Gnutella Output (2026)](#sample-gnutella-output-2026)
+- [PageRank (2018)](#pagerank-2018)
+  - [Introduction](#introduction)
+  - [Disclaimer](#disclaimer)
+  - [PageRank Formula](#pagerank-formula)
+  - [Usage](#usage)
+  - [Example Input](#example-input)
+  - [Example Output](#example-output)
+  - [Sample Gnutella Output (2018)](#sample-gnutella-output-2018)
+  - [Sample Gnutella Output (2026)](#sample-gnutella-output-2026)
 
 ## Introduction
 
@@ -196,10 +197,9 @@ Sum of differences: 0.000199
 ## Sample Gnutella Output (2026)
 
 ```
-# Using Python 3.10.x
-# 3.14.x likely provides further speed improvements
+# Using Python 3.14.4
 # pagerank_min.py (which doesn't perform extra stat checking)
-# acheived results of about 20 and 3 seconds respectively
+# achieved about the same results (15 and 3 seconds)
 
 ##########
 
@@ -208,20 +208,20 @@ MIN_SCORE: 10000
 
 Most visited nodes according to random surfer:
 
-Time: 27.057372
-Iterations: 4108425 (total score)
+Time: 16.401814
+Iterations: 4141770 (total score)
 Normalized score: 1.000000
 
-Node  367 (normalized: 0.002434; score: 10000)
-Node  249 (normalized: 0.002192; score:  9007)
-Node  145 (normalized: 0.002068; score:  8497)
-Node  264 (normalized: 0.001993; score:  8190)
-Node  266 (normalized: 0.001939; score:  7965)
-Node  123 (normalized: 0.001925; score:  7908)
-Node  127 (normalized: 0.001891; score:  7769)
-Node    5 (normalized: 0.001860; score:  7641)
-Node  122 (normalized: 0.001838; score:  7553)
-Node 1317 (normalized: 0.001829; score:  7513)
+Node  367 (normalized: 0.002414; score: 10000)
+Node  249 (normalized: 0.002205; score:  9134)
+Node  145 (normalized: 0.002057; score:  8518)
+Node  264 (normalized: 0.002009; score:  8321)
+Node  266 (normalized: 0.001965; score:  8140)
+Node  127 (normalized: 0.001877; score:  7776)
+Node 1317 (normalized: 0.001863; score:  7717)
+Node  122 (normalized: 0.001846; score:  7645)
+Node  123 (normalized: 0.001834; score:  7597)
+Node    5 (normalized: 0.001828; score:  7572)
 
 ##########
 
@@ -230,7 +230,7 @@ DELTA_NORMAL: 1e-06
 
 Highest ranking nodes according to PageRank:
 
-Time: 5.584024
+Time: 3.206829
 Iterations: 8
 Stable at: 5
 Sum of scores: 1.000000
@@ -251,24 +251,24 @@ Node    5 (score: 0.001831)
 Top 10 nodes for PageRank and random surfer respectively:
 
 [367, 249, 145, 264, 266, 123, 127, 122, 1317, 5]
-[367, 249, 145, 264, 266, 123, 127, 5, 122, 1317]
+[367, 249, 145, 264, 266, 127, 1317, 122, 123, 5]
 
 ##########
 
 Absolute differences between the top 10 nodes:
 (Using top nodes of PageRank as point of comparison)
 
-Node  367 (difference: 0.000046)
-Node  249 (difference: 0.000008)
-Node  145 (difference: 0.000013)
-Node  264 (difference: 0.000005)
-Node  266 (difference: 0.000025)
-Node  123 (difference: 0.000061)
-Node  127 (difference: 0.000030)
-Node  122 (difference: 0.000015) *
-Node 1317 (difference: 0.000015) *
-Node    5 (difference: 0.000029) *
+Node  367 (difference: 0.000027)
+Node  249 (difference: 0.000021)
+Node  145 (difference: 0.000002)
+Node  264 (difference: 0.000010)
+Node  266 (difference: 0.000002)
+Node  123 (difference: 0.000029) *
+Node  127 (difference: 0.000017) *
+Node  122 (difference: 0.000007)
+Node 1317 (difference: 0.000020) *
+Node    5 (difference: 0.000003)
 
-Greatest absolute difference: 0.000061
-Sum of differences: 0.000248
+Greatest absolute difference: 0.000029
+Sum of differences: 0.000138
 ```
